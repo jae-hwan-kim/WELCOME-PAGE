@@ -7,6 +7,4 @@ const bgImg = document.createElement("img");
 
 bgImg.src = `img/${todayImage}`;
 
-console.log(bgImg);
-
 document.body.appendChild(bgImg);
