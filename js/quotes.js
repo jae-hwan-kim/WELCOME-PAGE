@@ -1,6 +1,6 @@
 const quotes = [
     {
-        quote: "타인이 나를 비추는 거울이 듯, 나도 타인을 비추는 거울이다.",
+        quote: "타인이 나를 비추는 거울이 듯, 나도 타인을 비추는 거울이다",
         author: "jaekim",
     },
     {
@@ -12,23 +12,19 @@ const quotes = [
         author: "jaekim",
     },
     {
-        quote: "틀린 건 없다. 다를 뿐이다.",
+        quote: "틀린 건 없다. 다를 뿐이다",
         author: "jaekim",
     },
     {
-        quote: "아무도 너를 믿지 않아도, 고개 들고 다닐 수 있는 의지를 길러라.",
+        quote: "아무도 너를 믿지 않아도, 고개 들고 다닐 수 있는 의지를 길러라",
         author: "jaekim",
     },
     {
-        quote: "인생에서 도전은 기본이다.",
+        quote: "인생에서 도전은 기본이다",
         author: "jaekim",
     },
     {
         quote: "기대의 끝은 비난과 질타가 아닌, 응원과 위로가 되길...",
-        author: "jaekim",
-    },
-    {
-        quote: "단기적 부정과 장기적 긍정, 결국 긍정이어라",
         author: "jaekim",
     },
     {

@@ -2,28 +2,122 @@
 #outer {
     width: 100%;
     height: 100%;
-    position: absolute;
-}
-
-#inner {
-    width: 100%;
-    position: relative;
-    background-color: aqua;
+    position: fixed;
 }
 
 /* 상 중 하단 */
 .box {
     text-align: center;
-    background-color: antiquewhite;
+    width: 100%;
+    height: 33.333%;
+    color: white;
 }
 
 /* 상단 */
-#top div{
-    width: 33%;
-    float: left;
-    background-color: aquamarine;
+#top {
+    width: 100%;
+    margin-bottom: -50px;
 }
 
+#top div {
+    float: left;
+}
+
+#top div:first-child {
+    width: 20%;
+}
+
+#top div:nth-child(2) {
+    width: 60%;
+}
+
+#top div:last-child {
+    width: 20%;
+}
+
+#quotes {
+    padding-top: 100px;
+    font-style: oblique;
+    color: rgba(255, 255, 255, 0.7);    
+}
+
+#quotes span:first-child{
+    display: block;
+    width: 100%;
+    font-size: 25px;
+}
+
+#quotes span:last-child{
+    display: block;
+    padding-top: 10px;
+}
+
+#todo-form {
+    margin: 50px 20px 0 0;
+}
+
+#todo-form input[type=text]{
+    width: 70%;
+    padding-bottom: 5%;
+    border: none;
+    border-bottom: 2px solid white;
+    color: rgba(255, 255, 255, 0.7);
+    background: transparent;
+}
+
+#todo-form input[type=text]::placeholder{
+    color: rgba(255, 255, 255, 0.7);
+    font-size:small;
+    text-align: center;
+    opacity: 1;
+}
+
+/* 중단 */
+#mid {
+    margin-bottom: 5%;
+}
+
+#login-form {
+    margin-bottom: -5%;
+}
+
+#login-form input[type=text]{
+    width: 20%;
+    padding-bottom: 1%;
+    border: none;
+    border-bottom: 2px solid white;
+    color: rgba(255, 255, 255, 0.7);
+    background: transparent;
+}
+
+#login-form input[type=text]::placeholder{
+    font-size: large;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+    opacity: 1;
+}
+
+#login-form input:last-child{
+    display: none;
+}
+
+#greeting {
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.7);    
+}
+
+#clock {
+    font-size: 150px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* 하단 */
+#weather {
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* 기타 */
 .hidden {
     display: none;
 }
