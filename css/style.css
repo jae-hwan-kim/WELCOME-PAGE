@@ -92,11 +92,6 @@
 }
 
 /* 중단 */
-
-#login-form {
-    margin-bottom: -5%;
-}
-
 #login-form input[type=text]{
     width: 20%;
     padding: 1%;
