@@ -53,9 +53,9 @@
     padding-top: 10px;
 }
 
-/* 메모 폼 자체를 absoulte로 가져가야할듯? */
-#memo-form {
-    margin: 50px 20px 0 0;
+#memoBox {
+    position: absolute;
+    right: 0;
 }
 
 #memo-form input[type="text"] {
@@ -144,4 +144,5 @@ img {
     bottom: 0px;
     right: 0px;
     left: 0px;
+    z-index: 1;
 }
