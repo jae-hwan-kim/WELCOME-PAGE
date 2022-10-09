@@ -1,6 +1,6 @@
-const toDoForm = document.querySelector("#todo-form");
-const toDoInput = toDoForm.querySelector("input");
-const toDoList = document.querySelector("#todo-list");
+const memoForm = document.querySelector("#memo-form");
+const memoInput = memoForm.querySelector("input");
+const memoList = document.querySelector("#memo-list");
 
 const MEMO_KEY = "memo";
 
@@ -28,14 +28,14 @@ function paintToDo(newTodo) {
     button.addEventListener("click", deleteToDo);
     li.appendChild(span);
     li.appendChild(button);
-    toDoList.appendChild(li);
+    memoList.appendChild(li);
 }
 
 function handleToDoSubmit(event) {
     event.preventDefault();
-    const newTodo = toDoInput.value;
+    const newTodo = memoInput.value;
 
-    toDoInput.value = "";
+    memoInput.value = "";
     const newTodoObj = {
         text: newTodo,
         id: Date.now(),
@@ -45,7 +45,7 @@ function handleToDoSubmit(event) {
     saveToDos();
 }
 
-toDoForm.addEventListener("submit", handleToDoSubmit);
+memoForm.addEventListener("submit", handleToDoSubmit);
 
 const savedToDos = localStorage.getItem(MEMO_KEY);
 
