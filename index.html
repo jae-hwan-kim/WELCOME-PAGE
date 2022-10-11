@@ -9,6 +9,13 @@
     </head>
     <body>
         <div id="outer">
+            <div class="modal hidden">
+                <div class="modal-overlay"></div>
+                <div class="modal-content">
+                    <h1>I'm a modal</h1>
+                    <button>❌</button>
+                </div>
+            </div>
             <div class="box" id="top">
                 <div>&nbsp;</div>
 
@@ -46,6 +53,21 @@
                 </div>
             </div>
         </div>
+        <script>
+            const modalBtn = document.querySelector("#memo-form");
+            const modal = document.querySelector(".modal");
+            const overlay = modal.querySelector(".modal-overlay");
+            const closeBtn = modal.querySelector(".modal button");
+            const openModal = () => {
+                modal.classList.remove("hidden");
+            }
+            const closeModal = () => {
+                modal.classList.add("hidden");
+            }
+            modalBtn.addEventListener("submit", openModal);
+            overlay.addEventListener("click", closeModal);
+            closeBtn.addEventListener("click", closeModal);
+        </script>
         <script src="./js/background.js"></script>
         <script src="./js/quotes.js"></script>
         <script src="./js/greeting.js"></script>
